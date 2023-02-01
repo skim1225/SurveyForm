@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Prescription Order Form</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Preciption Order Form</h1>
+    <p id="description">Request or cancel your presciptions from any of our locations online!</p>
+    <form id="survey-form">
+      <label id="name-label">Name:
+        <input id="name" type="text" required placeholder="Enter your name" />
+      </label>
+      <label id="email-label">Email:
+        <input id="email" type="email" required placeholder="Enter your email" />
+      </label>
+      <label id="number-label">Presciption Number:
+        <input id="number" type="number" min="1" max="999999" placeholder="Enter your prescription number" />
+      </label>
+      <select id="dropdown">
+        <option>Choose an action</option>
+        <option>Refill</option>
+        <option>Cancel</option>
+      </select>
+      <fieldset>
+        Choose Location: 
+        <label>Edmonds
+          <input type="radio" name="location" value="1" />
+        </label>
+        <label>Federal Way
+          <input type="radio" name="location" value="2" />
+        </label>
+      </fieldset>
+      <fieldset>Include: 
+        <label><input type="checkbox" value="1"> Paper Bag</label>
+        <label><input type="checkbox" value="2"> Receipt</label>
+        <label><input type="checkbox" value="3"> Labels</label>
+      </fieldset>
+      <label for="instructions">Special Instructions:
+          <textarea id="bio" name="instructions" rows="3" cols="30"></textarea></label>
+        <button id="submit">Submit</button>
+    </form>
+  </body>
+</html>
